@@ -1,0 +1,655 @@
+Q) 1-----5 for loop
+
+#include<stdio.h>
+int main(){
+    for(int i=1;i<=5;i++){
+        printf("%d",i);
+    }
+    return 0;
+}
+
+----------------------------------------
+
+Q) 1--------10
+
+#include<stdio.h>
+int main(){
+    for(int i=1;i<=10;i++){
+        printf("%d",i);
+    }
+    return 0;
+}
+
+---------------------------------------
+
+Q) 56-----89
+
+#include<stdio.h>
+int main(){
+    for(int i=56;i<=89;i++){
+        printf("%d",i);
+    }
+    return 0;
+}
+
+--------------------------------------
+
+Q) 10-------1
+
+#include<stdio.h>
+int main(){
+    for(int i=10;i>=1;i--){
+        printf("%d",i);
+    }
+    return 0;
+}
+
+--------------------------------------
+
+Q) 100------1
+
+#include<stdio.h>
+int main(){
+    for(int i=100;i>=1;i--){
+        printf("%d",i);
+    }
+    return 0;
+}
+
+--------------------------------------
+
+Q) 67-----23
+
+#include<stdio.h>
+int main(){
+    for(int i=67;i>=23;i--){
+        printf("%d",i);
+    }
+    return 0;
+}
+
+-------------------------------------
+
+Q) 1------5 even number 
+
+#include<stdio.h>
+int main(){
+    int i;
+    for(int i=1;i<=5;i++){
+        if(i%2==0){
+         printf("%d",i);
+        }
+    }        
+        
+    return 0;
+}
+
+--------------------------------------
+
+Q) 1-------10
+
+#include<stdio.h>
+int main(){
+    int i;
+    for(int i=1;i<=10;i++){
+        if(i%2==0){
+         printf("%d",i);
+        }
+    }        
+        
+    return 0;
+}
+
+---------------------------------------
+
+Q) 56-------89
+
+#include<stdio.h>
+int main(){
+    int i;
+    for(int i=56;i<=89;i++){
+        if(i%2==0){
+         printf("%d",i);
+        }
+    }        
+        
+    return 0;
+}
+
+-------------------------------------------
+
+Q) 10------1
+
+#include<stdio.h>
+int main(){
+    int i;
+    for(int i=10;i>=1;i--){
+        if(i%2==0){
+         printf("%d",i);
+        }
+    }        
+        
+    return 0;
+}
+
+--------------------------------------------
+
+Q) 100-------1
+
+#include<stdio.h>
+int main(){
+    int i;
+    for(int i=100;i>=1;i--){
+        if(i%2==0){
+         printf("%d",i);
+        }
+    }        
+        
+    return 0;
+}
+
+------------------------------------------------
+
+Q) 67-------23
+
+#include<stdio.h>
+int main(){
+    int i;
+    for(int i=67;i>=23;i--){
+        if(i%2==0){
+         printf("%d",i);
+        }
+    }        
+        
+    return 0;
+}
+
+-----------------------------------------------
+
+Q) 1-------5 odd number
+
+#include<stdio.h>
+int main(){
+    int i;
+    for(int i=1;i<=5;i++){
+        if(i%2==!0){
+         printf("%d",i);
+        }
+    }        
+        
+    return 0;
+}
+
+-------------------------------------------------
+
+Q) 1-------10
+
+#include<stdio.h>
+int main(){
+    int i;
+    for(int i=1;i<=10;i++){
+        if(i%2==!0){
+         printf("%d",i);
+        }
+    }        
+        
+    return 0;
+}
+
+-----------------------------------------------
+
+Q) 56-------89
+
+#include<stdio.h>
+int main(){
+    int i;
+    for(int i=56;i<=89;i++){
+        if(i%2==!0){
+         printf("%d",i);
+        }
+    }        
+        
+    return 0;
+}
+
+---------------------------------------------------
+
+Q) 10-------1
+
+#include<stdio.h>
+int main(){
+    int i;
+    for(int i=10;i>=1;i--){
+        if(i%2==!0){
+         printf("%d",i);
+        }
+    }        
+        
+    return 0;
+}
+
+----------------------------------------------------
+
+Q) 100-------1
+
+#include<stdio.h>
+int main(){
+    int i;
+    for(int i=100;i>=1;i--){
+        if(i%2==!0){
+         printf("%d",i);
+        }
+    }        
+        
+    return 0;
+}
+
+-----------------------------------------------------
+
+Q) 67------23
+
+#include<stdio.h>
+int main(){
+    int i;
+    for(int i=67;i>=23;i--){
+        if(i%2==!0){
+         printf("%d",i);
+        }
+    }        
+        
+    return 0;
+}
+
+------------------------------------------------
+
+Q) 1------5  even number sum
+
+#include<stdio.h>
+int main(){
+    int sum=0;
+    for(int i=1;i<=5;i++){
+        if(i%2==0){
+         sum=sum+i;
+        }
+    }   
+    printf("%d",sum);
+        
+    return 0;
+}
+------------------------------------------------
+
+Q)
+
+1-------10
+
+#include<stdio.h>
+int main(){
+    int sum=0;
+    for(int i=1;i<=10;i++){
+        if(i%2==0){
+         sum=sum+i;
+        }
+    }   
+    printf("%d",sum);
+        
+    return 0;
+}
+
+-----------------------------------------
+
+Q) 56------89
+
+#include<stdio.h>
+int main(){
+    int sum=0;
+    for(int i=56;i<=89;i++){
+        if(i%2==0){
+         sum=sum+i;
+        }
+    }   
+    printf("%d",sum);
+        
+    return 0;
+}
+
+-------------------------------------------
+
+Q) 10-----1
+
+#include<stdio.h>
+int main(){
+    int sum=0;
+    for(int i=10;i>=1;i--){
+        if(i%2==0){
+         sum=sum+i;
+        }
+    }   
+    printf("%d",sum);
+        
+    return 0;
+}
+
+---------------------------------------------
+
+Q) 100--------1
+
+#include<stdio.h>
+int main(){
+    int sum=0;
+    for(int i=100;i>=1;i--){
+        if(i%2==0){
+         sum=sum+i;
+        }
+    }   
+    printf("%d",sum);
+        
+    return 0;
+}
+-------------------------------------------------
+
+Q) 67--------23
+
+#include<stdio.h>
+int main(){
+    int sum=0;
+    for(int i=67;i>=23;i--){
+        if(i%2==0){
+         sum=sum+i;
+        }
+    }   
+    printf("%d",sum);
+        
+    return 0;
+}
+
+---------------------------------------------------
+
+Q) 1-------5 odd number sum
+
+#include<stdio.h>
+int main(){
+    int sum=0;
+    for(int i=1;i<=5;i++){
+        if(i%2==!0){
+         sum=sum+i;
+        }
+    }   
+    printf("%d",sum);
+        
+    return 0;
+}
+
+----------------------------------------------------
+
+Q) 1-------10
+
+#include<stdio.h>
+int main(){
+    int sum=0;
+    for(int i=1;i<=10;i++){
+        if(i%2==!0){
+         sum=sum+i;
+        }
+    }   
+    printf("%d",sum);
+        
+    return 0;
+}
+
+-----------------------------------------------------
+
+Q) 56------89
+
+#include<stdio.h>
+int main(){
+    int sum=0;
+    for(int i=56;i<=89;i++){
+        if(i%2==!0){
+         sum=sum+i;
+        }
+    }   
+    printf("%d",sum);
+        
+    return 0;
+}
+
+---------------------------------------------------
+
+Q) 10-------1
+
+#include<stdio.h>
+int main(){
+    int sum=0;
+    for(int i=10;i>=1;i--){
+        if(i%2==!0){
+         sum=sum+i;
+        }
+    }   
+    printf("%d",sum);
+        
+    return 0;
+}
+
+---------------------------------------------------
+
+Q) 100------1
+
+#include<stdio.h>
+int main(){
+    int sum=0;
+    for(int i=100;i>=1;i--){
+        if(i%2==!0){
+         sum=sum+i;
+        }
+    }   
+    printf("%d",sum);
+        
+    return 0;
+}
+
+------------------------------------------------------
+
+Q) 67----------23
+
+#include<stdio.h>
+int main(){
+    int sum=0;
+    for(int i=67;i>=23;i--){
+        if(i%2==!0){
+         sum=sum+i;
+        }
+    }   
+    printf("%d",sum);
+        
+    return 0;
+}
+----------------------------------------------------
+
+Q) a:
+        1-----5 number print
+   b:
+        5-----1 number print
+   c:   
+        1-----5 even number
+   d: 
+        5-----1 odd number
+   e: 
+        1-----5 even number
+   f:
+        67----34 odd number ka sum
+
+     otherwise :input is not matched
+
+#include<stdio.h>
+int main(){
+    char alpha;
+    printf("enter any single character");
+    scanf("%c",&alpha);
+    if(alpha=='a'){
+        for(int i=1;i<=5;i++){
+           printf("%d",i); 
+        }
+    }
+    if(alpha=='b'){
+        for(int i=5;i>=1;i--){
+            printf("%d",i);
+        }
+    }
+    if(alpha=='c'){
+        for(int i=1;i<=5;i++){
+            if(i%2==0){
+                printf("%d",i);
+            }
+        }
+    }
+    if(alpha=='d'){
+        for(int i=5;i>=1;i--){
+            if(i%2!=0){
+               printf("%d",i); 
+            }
+        }
+    }
+    if(alpha=='e'){
+        int sum=0;
+        for(int i=1;i<=5;i++){
+            if(i%2==0){
+              sum=sum+i;  
+            }
+        }
+            printf("%d",sum);
+    }
+    if(alpha=='f'){
+        int sum=0;
+      for(int i=67;i>=34;i--){
+          if(i%2!=0){
+            sum=sum+i;  
+          }
+          
+      }  
+      printf("%d",sum);
+    }
+    
+    
+    return 0;
+}
+
+
+--------------------------------------------------------------------------------
+a :
+	Armstrong number check 
+
+p :
+	palindrome 
+
+r :
+	reverse number 
+
+c :
+	count 
+
+otherwise :input is not matched
+
+
+
+#include<stdio.h>
+int main(){
+    char alpha;
+    printf("enter any single character");
+    scanf("%c",&alpha);
+    if(alpha=='a'){
+         int n=151;
+    int temp=n;
+    int rem,sum=0;
+    while(n>0){
+    rem=n%10;
+    sum=sum+rem*rem*rem;
+    n=n/10;
+    }
+    if(sum==temp){
+     printf("armstrong number");   
+    }
+   else{
+       printf("not armstrong number");
+   }
+
+    }
+    if(alpha=='p'){
+         int n=123454321;
+    int temp=n;
+    int rem,sum=0;
+    while(n>0){
+    rem=n%10;
+    sum=sum*10+rem;
+    n=n/10;
+    }
+    if(temp==sum){
+     printf("pallindrome\n");   
+    }
+    printf("%d",sum);
+
+    }
+    if(alpha=='r'){
+        int n=45643;
+    int rem,sum=0;
+    while(n>0){
+        rem=n%10;
+        sum=sum*10+rem;
+        n=n/10;
+    }
+    printf("%d",sum);
+    }
+    if(alpha=='c'){
+       int n=34234;
+    int count =0;
+    while(n>0){
+      count ++;
+      n=n/10;
+    }
+    printf("%d",count);
+
+    }
+
+    
+    
+    return 0;
+}
+-----------------------------------------------------------------------------
+
+
+print table :
+2 table 
+
+
+#include<stdio.h>
+int main(){
+    for(int i=1;i<=10;i++){
+        int sum;
+        sum=2*i;
+       printf("%d",sum); 
+    }
+    
+    
+    return 0;
+}
+
+
+----------------------------------------------------------------------------
+
+sum of digit :
+34554 
+ 
+
+#include<stdio.h>
+int main(){
+    int n=34554;
+    int sum=0,rem;
+    while(n>0){
+        rem=n%10;
+        sum=sum+rem;
+        n=n/10;
+    }
+    printf("%d",sum);
+    return 0;
+}
+
+-------------------------------------------------------------------------------
