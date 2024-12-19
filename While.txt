@@ -1,0 +1,296 @@
+Q) 1-----5
+
+
+#include<stdio.h>
+int main(){
+    int a;
+    while(a<=5){
+        printf("%d",a);
+        a++;
+    }
+    return 0;
+}
+
+--------------------------------------------
+
+Q) 1-----100
+
+
+#include<stdio.h>
+int main(){
+    int a;
+    while(a<=100){
+        printf("%d",a);
+        a++;
+    }
+    return 0;
+}
+
+---------------------------------------------
+
+Q) 34-----89
+
+
+#include<stdio.h>
+int main(){
+    int a=34;
+    while(a<=89){
+        printf("%d",a);
+        a++;
+    }
+    return 0;
+}
+
+---------------------------------------------
+Q) 5-----1
+
+#include<stdio.h>
+int main(){
+    int a=5;
+    while(a>=1){
+        printf("%d",a);
+        a--;
+    }
+    return 0;
+}
+
+-------------------------------------------
+
+Q) 10-----1
+
+#include<stdio.h>
+int main(){
+    int a=10;
+    while(a>=1){
+        printf("%d",a);
+        a--;
+    }
+    return 0;
+}
+
+-------------------------------------------
+
+Q) 100------1
+
+#include<stdio.h>
+int main(){
+    int a=100;
+    while(a>=1){
+        printf("%d",a);
+        a--;
+    }
+    return 0;
+}
+
+--------------------------------------------
+
+Q) 45-----8
+
+#include<stdio.h>
+int main(){
+    int a=45;
+    while(a>=8){
+        printf("%d",a);
+        a--;
+    }
+    return 0;
+}
+
+--------------------------------------------
+
+Q) 1------10 even number
+
+
+#include<stdio.h>
+int main(){
+     int a=1;
+     while(a<=10){
+         if(a%2==0){
+             printf("%d",a);
+         }
+         a++;
+     }
+    return 0;
+}
+
+
+-------------------------------------------
+
+Q) 1------100 even number
+
+#include<stdio.h>
+int main(){
+     int a=1;
+     while(a<=100){
+         if(a%2==0){
+             printf("%d",a);
+         }
+         a++;
+     }
+    return 0;
+}
+
+-------------------------------------------
+
+Q) 17------198 even number
+
+#include<stdio.h>
+int main(){
+     int a=17;
+     while(a<=198){
+         if(a%2==0){
+             printf("%d",a);
+         }
+         a++;
+     }
+    return 0;
+}
+
+------------------------------------------
+
+Q) 5-----1 odd number
+
+#include<stdio.h>
+int main(){
+     int a=5;
+     while(a>=1){
+         if(a%2==!0){
+             printf("%d",a);
+         }
+         a--;
+     }
+    return 0;
+}
+
+-------------------------------------------
+
+Q) 10-----1 odd number
+
+#include<stdio.h>
+int main(){
+     int a=10;
+     while(a>=1){
+         if(a%2==!0){
+             printf("%d",a);
+         }
+         a--;
+     }
+    return 0;
+}
+
+------------------------------------------
+
+Q) 78-----65 odd number
+
+#include<stdio.h>
+int main(){
+     int a=78;
+     while(a>=65){
+         if(a%2==!0){
+             printf("%d",a);
+         }
+         a--;
+     }
+    return 0;
+}
+
+
+-----------------------------------------
+
+Q) 1-----10 number sum
+
+#include<stdio.h>
+int main(){
+     int a=1;
+     int sum=0;
+     while(a<=10){
+      sum=sum+a;
+      a++;
+     }
+     printf("%d",sum);
+    return 0;
+}
+
+--------------------------------------------
+
+
+Q) write a c program input a character:
+
+      a: 1-----10 number print
+      
+      b: 10-----1 number print
+
+      c:1------10 even print
+      
+      d:10-----1 even number
+
+      e:1------10 odd number
+
+      f:10-----odd number
+
+
+      otherwise input character : input is not matched
+
+
+#include<stdio.h>
+int main(){
+    char a;
+    printf("enter the value of a");
+    scanf("%c",&a);
+    if(a=='a'){
+        int i=1;
+        while (i<=10){
+            printf("%d",i);
+            i++;
+        }
+    }
+   else if (a=='b'){
+     int num=10;
+     while(num>=1){
+         printf("%d",num);
+     }
+     num--;
+   }
+   else if(a=='c'){
+       int num=1;
+       while(num<=10){
+           if (num%2==0){
+               printf("%d",num);
+           }
+           num++;
+       }
+   }
+   else if(a=='d'){
+     int num=10;
+     while(num>=1){
+         if(num%2==0){
+             printf("%d",num);
+         }
+         num--;
+     }
+   }
+   else if(a=='e'){
+       int num=1;
+       while(num<=10){
+           if(num%2==!0){
+               printf("%d",num);
+           }
+           num++;
+       }
+   }
+   else if(a=='f'){
+       int num=10;
+       while(num>=1){
+           if(num%2==!0){
+               printf("%d",num);
+           }
+           num--;
+       }
+   }
+   else {
+       printf("input is not matched");
+   }
+
+     return 0;
+}
+
