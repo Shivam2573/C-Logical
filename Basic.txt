@@ -1,0 +1,62 @@
+Hello world
+
+
+#include <stdio.h>
+
+int main()
+{
+    printf("hello world");
+    return 0;
+}
+
+----------------------------------------------------------
+
+Five friends Name
+
+
+#include <stdio.h>
+
+int main()
+{
+    printf("Jaipal\n");
+    printf("rishav\n");
+    printf("yuvi\n");
+    printf("sudhir\n");
+    printf("Divya"); 
+    return 0;
+}
+
+------------------------------------------------------------
+
+Five Country Names
+
+
+#include <stdio.h>
+
+int main()
+{
+    printf("India\n");
+    printf("America\n");
+    printf("australia\n");
+    printf("new zealand\n");
+    printf("nepal"); 
+    return 0;
+}
+
+--------------------------------------------------------------
+
+Five Fav food names
+
+#include <stdio.h>
+
+int main()
+{
+    printf("dal bati\n");
+    printf("cheese pizza\n");
+    printf("Manchuriyan\n");
+    printf("Steam momos\n");
+    printf("panner veg"); 
+    return 0;
+}
+
+------------------------------------------------------------
