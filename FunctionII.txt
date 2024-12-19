@@ -1,0 +1,1133 @@
+           ----------------------
+                           RETURN AND NO ARGUMENT
+                           ----------------------
+
+Add():
+
+#include<stdio.h>
+int show();
+int main(){
+    printf("%d",show());
+    
+    
+    return 0;
+}
+int show(){
+    int a=1,b=5;
+    int c=a+b;
+    return c;
+}
+
+-------------------------------------------------------------------------
+sub()
+#include<stdio.h>
+int show();
+int main(){
+    printf("%d",show());
+    
+    
+    return 0;
+}
+int show(){
+    int a,b;
+    printf("enter the value of a and b:");
+    scanf("%d%d",&a,&b);
+    int c=a-b;
+    return c;
+}
+
+
+div()
+
+#include<stdio.h>
+int show();
+int main(){
+    printf("%d",show());
+    
+    
+    return 0;
+}
+int show(){
+    int a,b;
+    printf("enter the value of a and b:");
+    scanf("%d%d",&a,&b);
+    int c=a/b;
+
+    return c;
+}
+
+
+mod()
+
+#include<stdio.h>
+int show();
+int main(){
+    printf("%d",show());
+    
+    
+    return 0;
+}
+int show(){
+    int a,b;
+    printf("enter the value of a and b:");
+    scanf("%d%d",&a,&b);
+    int c=a%b;
+    return c;
+}
+
+
+multi()
+
+#include<stdio.h>
+int show();
+int main(){
+    printf("%d",show());
+    
+    
+    return 0;
+}
+int show(){
+    int a,b;
+    printf("enter the value of a and b:");
+    scanf("%d%d",&a,&b);
+    int c=a*b;
+    return c;
+}
+
+--------------------------------------------------------------------------------
+swapwith():
+
+#include<stdio.h>
+int show();
+int main(){
+     
+    printf("%d",show());
+    
+    
+    return 0;
+}
+int show(){
+    int a=10;
+    int b=20;
+    int c;
+    printf("the value of a is:%d\n",a);
+    printf("the value of b is:%d\n",b);
+    c=a;
+    a=b;
+    b=c;
+    
+    printf("the swap value of a is:%d\n",a);
+    printf("the swap value of b is:%d\n",b);
+    return b;
+}
+
+
+swapwithout(): 
+
+#include<stdio.h>
+int show();
+int main(){
+     
+    printf("%d",show());
+    
+    
+    return 0;
+}
+int show(){
+    int a=10;
+    int b=20;
+    printf("the value of a is:%d\n",a);
+    printf("the value of b is:%d\n",b);
+    a=a+b;
+    b=a-b;
+    a=a-b;
+    printf("the swap value of a is:%d\n",a);
+    printf("the swap value of b is:%d\n",b);
+    return b;
+}
+
+---------------------------------------------------------------------------------
+EVEN():
+#include<stdio.h>
+int show();
+int main(){
+     
+    printf("%d",show());
+    
+    
+    return 0;
+}
+int show(){
+     int a;
+     printf("enter the value of a:");
+     scanf("%d",&a);
+     if(a%2==0){
+         printf("EVEN NUMBER");
+     }
+     else {
+         printf("ODD NUMBER");
+         
+     }
+    return a;
+}
+
+
+VOTER():
+
+#include<stdio.h>
+int show();
+int main(){
+        
+ printf("%d\n",show());
+    
+    return 0;
+}
+int show(){
+    int a;
+    printf("enter the value of a :");
+    scanf("%d",&a);
+    if(a>=18){
+        printf("voter id is eligible for vote");
+    }
+    else{
+        printf("Voter id is not eligible for vote");
+    }
+    return a;
+}
+
+
+MAXIMUM():
+
+#include<stdio.h>
+int show();
+int main(){
+        
+ printf("%d\n",show());
+    
+    return 0;
+}
+int show(){
+   int a,b,c;
+   printf("enter the value of a,b and c:");
+   scanf("%d%d%d",&a,&b,&c);
+   if(a>b&&a>c){
+       printf("a is greater");
+   }
+   else if(b<a&&b<c){
+       printf("b is greater");
+   }
+   else if(c>a&&c>b){
+       printf("c is greater");
+   }
+   
+    return a;
+}
+
+
+MARKSHEET():
+
+#include<stdio.h>
+int show();
+int main(){
+        
+ printf("%d\n",show());
+    
+    return 0;
+}
+int show(){
+ int a,b,c,d,e;
+    printf("enter the value of a,b,c,d and e");
+    scanf("%d%d%d%d%d",&a,&b,&c,&d,&e);
+   int per=a+b+c+d+e*100/500;
+    printf("%d\n",per);
+    if(per>=90||per<=100){
+        printf("A");
+    }
+       else if(per>=80||per<=89){
+           printf("B");
+       }
+       else if(per>=70||per<=79){
+           printf("C");
+       }
+       else if(per>=60||per<=69){
+           printf("D");
+       }
+       else if (per<60){
+           printf("f");
+       }
+
+    return a;
+}
+
+
+SALARY():
+
+#include<stdio.h>
+int show();
+int main(){
+        
+ printf("%d\n",show());
+    
+    return 0;
+}
+int show(){
+ char name,add,bank_name;
+    int salary,holiday;
+    float alot;
+    printf("Enter the name of employee:");
+    scanf("%s",&name);
+    printf("Enter the address of the employee:");
+    scanf(" %s",&add);
+    printf("Enter the bank details:");
+    scanf(" %s",&bank_name);
+    printf("Enter the salary of the employee:");
+    scanf("%d",&salary);
+    printf("The holidays can employee can take:");
+    scanf("%d",&holiday);
+    if(holiday==1){
+        printf("The employee complete salary:%d",salary);
+    }
+    else if(holiday>=2 && holiday<=5){
+        alot=salary-((salary*5)/100);
+        printf("The salary of the employee:%f",alot);
+    }
+    else if(holiday>5 && holiday<15){
+        alot=salary-((salary*10)/100);
+        printf("The salary of the employee:%f",alot);
+    }
+    else if(holiday==15){
+        alot=salary-((salary*15)/100);
+        printf("The salary of the employee:%f",alot);
+    }
+    else{
+        printf("Not salary");
+    }
+    
+
+ 
+    
+}
+
+
+VOWELS():
+
+#include<stdio.h>
+int show();
+int main(){
+        
+ printf("%d\n",show());
+    
+    return 0;
+}
+int show(){
+char a;
+    printf("enter the value of a");
+    scanf("%c",&a);
+    if(a=='a'||a=='e'||a=='i'||a=='o'||a=='u'){
+        printf("VOWEL");
+    }
+       else{
+           printf("CONSONANT");
+       }
+return a;
+    
+
+ 
+    
+}
+
+
+
+TAX():
+
+#include<stdio.h>
+int show();
+int main(){
+        
+ printf("%d\n",show());
+    
+    return 0;
+}
+int show(){
+char a;
+        int income;
+    float tax;
+    printf("enter the income of employee");
+    scanf("%d",&income);
+    if(income<=10000){
+        printf("No tax, complete salary of the employee is:%d",income);
+    }
+    else if(income>=10001 && income<=30000){
+        tax=((income*10)/100);
+        printf("include tax, salary of employee is:%f",tax);
+    }
+    else if(income>=30001 && income<=50000){
+    tax=((income*20)/100);
+    printf("salary of employee is:%f",tax);
+    }
+    else if(income>50000){
+        tax=((income*30)/100);
+        printf("salary of employee is:%f",tax);
+    }
+
+
+return a;
+    
+
+ 
+    
+}
+
+
+ELECTRICITY():
+
+#include<stdio.h>
+int show();
+int main(){
+        
+ printf("%d\n",show());
+    
+    return 0;
+}
+int show(){
+     int unit;
+    float amount;
+    printf("Enter the units:");
+    scanf("%d",&unit);
+    amount=unit*10;
+    if(unit>=1 && unit<=10){
+        amount=amount-((amount*10)/100);
+        printf("The total pay amount is:%f",amount);
+    }
+    else if(unit>=11 && unit<=20){
+        amount=amount-((amount*15)/100);
+        printf("The total pay amount is:%f",amount);
+    }
+    else if(unit>=21 && unit<=40){
+        amount=amount-((amount*30)/100);
+        printf("The total pay amount is:%f",amount);
+    }
+    else if(unit==50){
+        amount=amount-((amount*50)/100);
+        printf("The total pay amount is:%f",amount);
+    }
+    else{
+        printf("input is not matched");
+    }
+ 
+    
+}
+
+
+--------------------------------------------------------------------------------
+
+a :
+	Armstrong()
+
+p :
+	palindrome()
+
+r :
+	reverse()
+
+s :
+	sumofdigit()
+
+c :
+	count()
+
+f :
+	factorial()
+
+b :
+	Fibonacci() 
+
+
+#include<stdio.h>
+int show();
+int main(){
+        
+ show();
+    
+    return 0;
+}
+int show(){
+    char a;
+    printf("enter any single character:");
+    scanf("%c",&a);
+    if(a=='a'){
+    int n=153;
+    int temp=n;
+    int rem,sum=0;
+
+
+    while(n>0){
+      rem=n%10;
+      sum=sum+rem*rem*rem;
+      n=n/10;
+    }
+    if(sum == temp){
+        printf("armstrong number ");
+    }
+    else{
+        printf("not armstrong ");
+    }
+    
+}
+if(a=='p'){
+    int n=12321;
+    int temp=n;
+    int rem,sum=0;
+    while(n>0){
+        rem=n%10;
+        sum=sum*10+rem;
+        n=n/10;
+    }
+    if(temp==sum){
+        printf("palindrome number");
+    }
+    else{
+        printf("not palindrome number");
+    }
+}
+if(a=='r'){
+    int n=12345;
+    int rem,sum=0;
+    while(n>0){
+        rem=n%10;
+        sum=sum*10+rem;
+        n=n/10;
+    }
+    printf("%d\n",sum);
+}
+   if(a=='c'){
+       int n=882498;
+       int count=0;
+       while(n>0){
+           count++;
+           n=n/10;
+       }
+       printf("%d",count);
+   }
+
+ if(a=='s'){
+     int n=123;
+     int rem,sum=0;
+     while(n>0){
+     rem=n%10;
+     sum=sum+rem;
+     n=n/10;
+ }
+ printf("%d",sum);
+ } 
+ if(a=='f'){
+     int n=5;
+     int fact=1;
+     for(int i=1;i<=5;i++){
+         fact=fact*i;
+     }
+     printf("%d",fact);
+ }
+ if(a=='b'){
+     int n1=0,n2=1,n3;
+     printf("%d%d",n1,n2);
+     int n=5;
+     for(int i=1;i<=n;i++){
+         n3=n1+n2;
+         printf("%d",n3);
+         n1=n2;
+         n2=n3;
+     }
+ }
+ return a;
+}
+
+-----------------------------------------------------------------------------
+                 ------------------------
+                    return and argument
+                 ------------------------
+add()
+
+#include<stdio.h>
+int sum(int a,int b);
+int main(){
+    int a,b,c;
+    printf("enter value of a");
+    scanf("%d",&a);
+    printf("enter value of b");
+    scanf("%d",&b);
+    c=a+b;
+    printf("sum:%d",c);
+    return 0;
+}
+int sum(int a,int b){
+    return a+b;
+}
+
+---------------------------------------------------------
+
+sub()
+
+#include<stdio.h>
+int sub(int a,int b);
+int main(){
+    int a,b,c;
+    printf("enter value of a");
+    scanf("%d",&a);
+    printf("enter value of b");
+    scanf("%d",&b);
+    c=a-b;
+    printf("sub:%d",c);
+    return 0;
+}
+int sub(int a,int b){
+    return a-b;
+}
+
+----------------------------------------------------------
+
+div()
+
+#include<stdio.h>
+int div(int a,int b);
+int main(){
+    int a,b,c;
+    printf("enter value of a");
+    scanf("%d",&a);
+    printf("enter value of b");
+    scanf("%d",&b);
+    c=a/b;
+    printf("div:%d",c);
+    return 0;
+}
+int div(int a,int b){
+    return a/b;
+}
+
+----------------------------------------------------------
+
+mod()
+
+
+#include<stdio.h>
+int mod(int a,int b);
+int main(){
+    int a,b,c;
+    printf("enter value of a");
+    scanf("%d",&a);
+    printf("enter value of b");
+    scanf("%d",&b);
+    c=a%b;
+    printf("mod:%d",c);
+    return 0;
+}
+int mod(int a,int b){
+    return a%b;
+}
+
+---------------------------------------------------------
+
+mul()
+
+#include<stdio.h>
+int mul(int a,int b);
+int main(){
+    int a,b,c;
+    printf("enter value of a");
+    scanf("%d",&a);
+    printf("enter value of b");
+    scanf("%d",&b);
+    c=a*b;
+    printf("mul:%d",c);
+    return 0;
+}
+int mul(int a,int b){
+    return a*b;
+}
+
+-------------------------------------------------------
+
+swap()
+
+#include<stdio.h>
+int swap(int a,int b);
+int main(){
+    int a=100;
+    int b=200;
+    int c;
+    printf("the value of a is:%d\n",a);
+    printf("the value of b is:%d\n",b);
+    c=a;
+    a=b;
+    b=c;
+    printf("the swap value of a is:%d\n",a);
+    printf("the swap value of b is:%d\n",b);
+    return 0;
+}
+int swap(int a,int b){
+    return 0;
+}
+
+----------------------------------------------------------
+
+swapwithout()
+
+#include<stdio.h>
+int swap(int a,int b);
+int main(){
+    int a=10;
+    int b=20;
+    printf("the value of a is:%d\n",a);
+    printf("the value of b is:%d\n",b);
+    a=a+b;
+    b=a-b;
+    a=a-b;
+    printf("the swap value of a is:%d\n",a);
+    printf("the swap value of b is:%d\n",b);
+    return 0;
+}
+int swap(int a,int b){
+    return 0;
+}
+
+-------------------------------------------------------------
+
+even()
+
+#include<stdio.h>
+int even(int a);
+int main(){
+    int a;
+    printf("enter the value of a");
+    scanf("%d",&a);
+    if(a%2==0){
+        printf("even number");
+    }
+    else{
+        printf("odd number");
+    }
+    return 0;
+}
+int even(int a){
+    return 0;
+}
+-----------------------------------------------------------
+
+voter()
+
+#include<stdio.h>
+int voter(int a);
+int main(){
+    int age;
+    printf("enter a age");
+    scanf("%d",&age);
+    if(age>18){
+        printf("valid");
+    }
+    else{
+       printf("not valid");
+    }
+    return 0;
+}
+int voter(int a){
+    return 0;
+}
+
+--------------------------------------------------------------
+
+maximum()
+
+#include<stdio.h>
+int maximum(int a);
+int main(){
+       int a,b,c;
+    printf(" the greater value of a,b,c");
+    scanf("%d%d%d",&a,&b,&c);
+    if(a>b && a>c){
+    printf("a is greater");
+    }
+    else if(b>a && b>c){
+        printf("b is greater");
+    }
+    else if(c>a && c>b){
+        printf("c is greater");
+    }
+    return 0;
+}
+int maximum(int a){
+    return 0;
+}
+
+---------------------------------------------------------------
+
+marksheet()
+
+#include<stdio.h>
+int maximum(int a);
+int main(){
+       int a,b,c,d,e;
+    printf("Enter the student marks:");
+    scanf("%d%d%d%d%d",&a,&b,&c,&d,&e);
+    int total;
+    total=a+b+c+d+e;
+    float percentage;
+    percentage=(total*100)/500;
+    printf("%f\n",percentage);
+    if(percentage<25){
+        printf("Your grade is F\n");
+    }
+    else if(percentage>=25 && percentage<45 ){
+        printf("Your grade is E");
+    }
+    else if(percentage>=45 && percentage<50){
+        printf("Your grade is D");
+    }
+    else if(percentage>=50 && percentage<60){
+        printf("Your grade is C");
+    }
+    else if(percentage>=60 && percentage<80){
+        printf("Your grade is B");
+    }
+    else if(percentage>=80){
+        printf("Your grade is A");
+        
+    }
+    else{
+        printf("Please enter correct value");
+    }
+    return 0;
+}
+int maximum(int a){
+    return 0;
+}
+
+-----------------------------------------------------------------
+
+salary()
+
+#include<stdio.h>
+int salary(int a);
+int main(){
+      char name,add,bank_name;
+    int salary,holiday;
+    float alot;
+    printf("Enter the name of employee:");
+    scanf("%s",&name);
+    printf("Enter the address of the employee:");
+    scanf(" %s",&add);
+    printf("Enter the bank details:");
+    scanf(" %s",&bank_name);
+    printf("Enter the salary of the employee:");
+    scanf("%d",&salary);
+    printf("The holidays can employee can take:");
+    scanf("%d",&holiday);
+    if(holiday==1){
+        printf("The employee complete salary:%d",salary);
+    }
+    else if(holiday>=2 && holiday<=5){
+        alot=salary-((salary*5)/100);
+        printf("The salary of the employee:%f",alot);
+    }
+    else if(holiday>5 && holiday<15){
+        alot=salary-((salary*10)/100);
+        printf("The salary of the employee:%f",alot);
+    }
+    else if(holiday==15){
+        alot=salary-((salary*15)/100);
+        printf("The salary of the employee:%f",alot);
+    }
+    else{
+        printf("Not salary");
+    }
+
+    return 0;
+}
+int salary(int a){
+    return 0;
+}
+
+------------------------------------------------------------------
+
+vowel()
+
+#include<stdio.h>
+int vowel(int a);
+int main(){
+    char a;
+printf("enter any single charcter");
+scanf("%c",&a);
+if(a=='A'||a=='E'||a=='I'||a=='O'||a=='U'){
+    printf("vowel");
+}
+else{
+    printf("consonant");
+}
+    return 0;
+}
+int vowel(int a){
+    return 0;
+}
+
+-----------------------------------------------------------------------
+
+tax()
+
+#include<stdio.h>
+int tax(int a);
+int main(){
+    int income;
+    float tax;
+    printf("Enter the income of the employee:");
+    scanf("%d",&income);
+    if(income<=10000){
+        printf("No tax, the employee salary is:%d",income);
+    }
+    else if(income>10000 && income<=30000){
+        tax=income-((income*10)/100);
+        printf("The salary of the employee is:%f",tax);
+    }
+    else if(income>30000 && income<=50000){
+        tax=income-((income*20)/100);
+        printf("The salary of the employee is:%f",tax);
+    }
+    else if(income>50000){
+        tax=income-((income*30)/100);
+        printf("The salary of the employee is:%f",tax);
+    }
+    else{
+        printf("input is not matched");
+    }
+
+    return 0;
+}
+int tax(int a){
+    return 0;
+}
+-------------------------------------------------------------------------
+
+electicity()
+
+#include<stdio.h>
+int electricity(int a);
+int main(){
+   int unit;
+    float amount;
+    printf("Enter the units:");
+    scanf("%d",&unit);
+    amount=unit*10;
+    if(unit>=1 && unit<=10){
+        amount=amount-((amount*10)/100);
+        printf("The total pay amount is:%f",amount);
+    }
+    else if(unit>=11 && unit<=20){
+        amount=amount-((amount*15)/100);
+        printf("The total pay amount is:%f",amount);
+    }
+    else if(unit>=21 && unit<=40){
+        amount=amount-((amount*30)/100);
+        printf("The total pay amount is:%f",amount);
+    }
+    else if(unit==50){
+        amount=amount-((amount*50)/100);
+        printf("The total pay amount is:%f",amount);
+    }
+    else{
+        printf("input is not matched");
+    }
+    return 0;
+}
+int electricity(int a){
+    return 0;
+}
+
+----------------------------------------------------------------------------
+
+a:
+     Armstrong()
+
+
+#include<stdio.h>
+int armstrong(int a);
+int main(){
+   char a;
+    printf("enter any single character");
+    scanf("%c",&a);
+    int n=153;
+    int temp=n;
+    int rem,sum=0;
+    while(n>0){
+        rem=n%10;
+        sum=sum+rem*rem*rem;
+        n=n/10;
+    }
+    if(sum==temp){
+        printf("armstrong number");
+    }
+    else{
+        printf("not armstrong number");
+    }
+    return 0;
+}
+
+int armstrong(int a){
+    return 0;
+}
+
+-----------------------------------------------------------------------------
+
+p:
+    palindrome()
+
+#include<stdio.h>
+int palindrome(int a);
+int main(){
+  char p;
+    printf("enter any single character");
+    scanf("%c",&p);
+    int n=12321;
+    int temp=n;
+    int rem,sum=0;
+    while(n>0){
+        rem=n%10;
+        sum=sum*10+rem;
+        n=n/10;
+    }
+    if(temp==sum){
+        printf("pallindrome number");
+    }
+    else{
+        printf("not pallindrome number");
+    }
+
+    return 0;
+}
+
+int palindrome(int a){
+    return 0;
+}
+-----------------------------------------------------------------------------
+
+r:
+     reverse()
+
+#include<stdio.h>
+int reverse(int a);
+int main(){
+ char r;
+    printf("enter any single character");
+    scanf("%c",&r);
+    int n=634;
+    int rem,sum=0;
+    while(n>0){
+        rem=n%10;
+        sum=sum*10+rem;
+        n=n/10;
+    }
+      printf("%d",sum);
+      return 0;
+    }
+
+int reverse(int a){
+    return 0;
+}
+
+---------------------------------------------------------------------------------
+
+s:
+    sum of digit()
+
+#include<stdio.h>
+int sum of digit(int a);
+int main(){
+     char s;
+    printf("enter any single character");
+    scanf("%c",&s);
+    int a=1;
+    int sum=0;
+    while(a<=5){
+        sum=sum+a;
+        a++;
+    }
+    printf("%d",sum);
+      return 0;
+    }
+
+int sum of digit(int a){
+    return 0;
+}
+--------------------------------------------------------------------------------------
+
+c:
+    count()
+
+#include<stdio.h>
+int count(int a);
+int main(){
+     char c;
+    printf("enter any single character");
+    scanf("%c",&c);
+    int n=54632;
+    int count=0;
+    while(n>0){
+        count++;
+        n=n/10;
+    }
+    printf("%d",count);
+      return 0;
+    }
+
+int count(int a){
+    return 0;
+}
+--------------------------------------------------------------------------------------
+
+f:
+   factorial
+
+#include<stdio.h>
+int factorial(int a);
+int main(){
+     char f;
+    printf("enter any single character");
+    scanf("%c",&f);
+    int n=5;
+    int fact=1;
+    for(int i=1;i<=n;i++){
+        fact=fact*i;
+    }
+    printf("%d",fact);
+      return 0;
+    }
+
+int factorial(int a){
+    return 0;
+}
+
+-----------------------------------------------------------------------------------------
+
+b:
+    Fibonacci
+ 
+#include<stdio.h>
+int factorial(int a);
+int main(){
+    char b;
+    printf("enter any single character");
+    scanf("%c",&b);
+   int n1=0,n2=1,n3;
+   printf("%d%d",n1,n2);
+   int n=5;
+   for(int i=1;i<=n;i++){
+       n3=n1+n2;
+       printf("%d",n3);
+       n1=n2;
+       n2=n3;
+   }
+      return 0;
+    }
+
+int factorial(int a){
+    return 0;
+}
+
+---------------------------------------------------------------------------------------------
