@@ -1,0 +1,356 @@
+wite a c program input a number :
+1----->jan
+2----->feb
+total month
+
+
+#include<stdio.h>
+int main(){
+    int a;
+    printf("enter the value of a");
+    scanf("%d",&a);
+    if (a==1){
+    printf("January");    
+    }
+    else if  (a==2){
+        printf("February");
+    }
+    else if (a==3){
+        printf("March");
+    }
+    else if(a==4){
+        printf("April");
+    }
+    else if(a==5){
+        printf("May");
+    }
+    else if(a==6){
+        printf("June");
+    }
+    else if(a==7){
+        printf("July");
+    }
+    else if(a==8){
+        printf("August");
+    }
+    else if(a==9){
+     printf("September");   
+    }
+    else if(a==10){
+        printf("Octember");
+    }
+    else if(a==11){
+       printf("November"); 
+    }
+    else if(a==12){
+        printf("December");
+    }
+    return 0;
+}
+
+--------------------------------------------------------
+
+wite a c program input a number :
+
+week days
+1:sun
+2:mon
+
+
+#include<stdio.h>
+int main(){
+    int a;
+    printf("enter the value of a");
+    scanf("%d",&a);
+    if (a==1){
+        printf("Sunday");
+    }
+    else if(a==2){
+        printf("Monday");
+    }
+    else if(a==3){
+        printf("Tuesday");
+    }
+    else if(a==4){
+        printf("Wednesday");
+    }
+    else if (a==5){
+        printf("Thrusday");
+    }
+    else if (a==6){
+        printf("Friday");
+    }
+    else if(a==7){
+        printf("Saturday");
+    }
+    return 0;
+}
+
+--------------------------------------------------------
+
+e:
+          number input :
+          check number is even or odd
+
+  otherwise :input is not matched
+
+
+#include<stdio.h>
+int main(){
+    char a;
+    printf("enter the value of a");
+    scanf("%c",&a);
+    if(a=='e'){
+        int num;
+        printf("enter the value of num");
+        scanf("%d",&num);
+        if(num%2==0){
+            printf("even");
+        }
+        else if(num%2==!0){
+        printf("odd");
+    }
+    }
+    else{
+        printf("input is not matched");
+    } 
+    return 0;
+}
+--------------------------------------------------------
+
+v:
+       number input
+       check voter id elgibility
+
+input is not matched
+
+
+#include<stdio.h>
+int main(){
+    char a;
+    printf("enter the value of a");
+    scanf("%c",&a);
+    if(a=='v'){
+        int num;
+        printf("enter the value of num");
+        scanf("%d",&num);
+        if(num>=18){
+           printf("voter id is eligible"); 
+        }
+        else if(num<=18){
+            printf("voter id is not eligible");
+        }
+    }
+    else{
+        printf("input is not matched");
+    }
+    return 0;
+}
+
+--------------------------------------------------------
+
+v :
+	character input :vowel and conosonant 
+
+k :
+	upper line 
+	mid line 
+	lower line 
+
+t :
+	temperature code 
+
+m :
+	month 
+
+c :
+	calculator 
+
+w :
+	week days 
+
+s :
+	salary 
+
+i :
+	ticket 
+
+o :
+	income tax
+
+input is not matched 
+
+#include<stdio.h>
+int main(){
+    char alpha;
+    printf("enter any single character");
+    scanf("%c",&alpha);
+    if(alpha=='v'){
+     char a;
+     printf("enter any single character");
+     scanf("%c",&a);
+     if(a=='a'|| a=='e'|| a=='i'|| a=='o'|| a=='u'){
+         printf("vowel");
+     }
+   else{
+       printf("consonant");
+   
+    }
+    }
+    if(alpha=='k'){
+        printf("upper line\n");
+        printf("mid line\n");
+        printf("lower line\n");
+        
+    }
+    if(alpha=='m'){
+     int num;
+     printf("enter the value of num");
+     scanf("%d",&num);
+     if(num==1){
+         printf("january");
+     }
+     else if(num==2){
+         printf("febuary");
+     }
+     else if(num==3){
+         printf("march");
+     }
+     else if(num==4){
+         printf("april");
+     }
+     else if(num==5){
+         printf("may");
+     }
+     else if(num==6){
+         printf("june");
+     }
+     else if (num==7){
+         printf("july");
+     }
+     else if(num==8){
+         printf("august");
+     }
+     else if(num==9){
+         printf("september");
+     }
+     else if(num==10){
+         printf("octember");
+     }
+     else if(num==11){
+     printf("november");
+     }
+     else if(num==12){
+         printf("december");
+     }
+    }
+    if(alpha=='w'){
+        int num;
+        printf("enter the value of num");
+         scanf("%d",&num);
+         if(num==1){
+             printf("sunday");
+         }
+         else if(num==2){
+             printf("monday");
+         }
+         else if (num==3){
+             printf("tuesday");
+         }
+         else if(num==4){
+             printf("wednesday");
+         }
+         else if(num==5){
+             printf("thursday");
+         }
+         else if(num==6){
+             printf("friday");
+         }
+         else if(num==7){
+             printf("saturday");
+         }
+    }
+    if(alpha=='i'){
+        int ticket,age;
+    float discount;
+    printf("Enter the ticket price:");
+    scanf("%d",&ticket);
+    printf("Enter the age:");
+    scanf("%d",&age);
+    if(age<12){
+        discount=ticket-((ticket*50)/100);
+        printf("The ticket for children is:%f",discount);
+    }
+    else if(age>=65){
+        discount=ticket-((ticket*30)/100);
+        printf("The ticket for senior citizen is:%f",discount);
+    }
+    else{
+        printf("The ticket in original price:%d",ticket);
+    }
+    
+    }
+    if(alpha=='o'){
+        int income;
+    float tax;
+    printf("Enter the income of the employee:");
+    scanf("%d",&income);
+    if(income<=10000){
+        printf("No tax, the employee salary is:%d",income);
+    }
+    else if(income>10000 && income<=30000){
+        tax=income-((income*10)/100);
+        printf("The salary of the employee is:%f",tax);
+    }
+    else if(income>30000 && income<=50000){
+        tax=income-((income*20)/100);
+        printf("The salary of the employee is:%f",tax);
+    }
+    else if(income>50000){
+        tax=income-((income*30)/100);
+        printf("The salary of the employee is:%f",tax);
+    }
+    else{
+        printf("input is not matched");
+    }
+
+    }
+    if(alpha=='s'){
+         char name,add,bank_name;
+    int salary,holiday;
+    float alot;
+    printf("Enter the name of employee:");
+    scanf("%s",&name);
+    printf("Enter the address of the employee:");
+    scanf(" %s",&add);
+    printf("Enter the bank details:");
+    scanf(" %s",&bank_name);
+    printf("Enter the salary of the employee:");
+    scanf("%d",&salary);
+    printf("The holidays can employee can take:");
+    scanf("%d",&holiday);
+    if(holiday==1){
+        printf("The employee complete salary:%d",salary);
+    }
+    else if(holiday>=2 && holiday<=5){
+        alot=salary-((salary*5)/100);
+        printf("The salary of the employee:%f",alot);
+    }
+    else if(holiday>5 && holiday<15){
+        alot=salary-((salary*10)/100);
+        printf("The salary of the employee:%f",alot);
+    }
+    else if(holiday==15){
+        alot=salary-((salary*15)/100);
+        printf("The salary of the employee:%f",alot);
+    }
+    else{
+        printf("Not salary");
+    }
+
+    }
+    
+  
+    
+    return 0;
+} 
