@@ -1,0 +1,491 @@
+Q) Write a c program input a number:
+     1 :one
+     2 :two
+     3 :three
+     4 :four
+     5 :five
+ 
+       otherwise :input is not matched
+
+#include<stdio.h>
+int main(){
+    char a;
+    printf("a single character of a");
+    scanf("%c",&a);
+    if(a=='1'){
+        printf("one");
+    }
+    else if(a=='2'){
+        printf("two");
+    }
+    else if(a=='3'){
+        printf("three");
+    }
+    else if(a=='4'){
+        printf("four");
+    }
+    else if(a=='5'){
+        printf("five");
+    }
+    else{
+        printf("input is not matched");
+    }
+        return 0;
+    }
+    
+ ------------------------------------------------------ 
+
+Q) Write a c program input a number:
+     a :apple
+     b :ball
+     c :cat
+     d :doll
+ 
+       otherwise :input is not matched
+
+#include<stdio.h>
+int main(){
+    char a;
+    printf("a single character of a");
+    scanf("%c",&a);
+    if(a=='a'){
+        printf("apple");
+    }
+    else if(a=='b'){
+        printf("ball");
+    }
+    else if(a=='c'){
+        printf("cat");
+    }
+    else if(a=='d'){
+        printf("doll");
+    }
+    else if(a=='5'){
+        printf("five");
+    }
+    else{
+        printf("input is not matched");
+    }
+        return 0;
+    }
+
+--------------------------------------------------------------
+
+Q) Write a c program input a number:
+     a:
+         two number input :addition
+     m :
+         two number input :multiply
+     d :
+         two number input :divide
+     s :
+         two number input :substraction
+ 
+       otherwise :input is not matched
+
+#include<stdio.h>
+int main(){
+    char a;
+   printf("enter any single character");
+   scanf("%c",&a);
+   if(a=='a'){
+       int num1,num2,num3;
+       printf("enter the value of num1,num2");
+       scanf("%d %d",&num1,&num2);
+       num3=num1+num2;
+       printf("enter the value of num3 is:%d",num3);
+   }
+   else if(a=='m'){
+    int num1,num2,num3;
+    printf("enter the value of num1,num2");
+    scanf("%d %d",&num1,&num2);
+    num3=num1*num2;
+    printf("enter the value of num3 is:%d",num3);
+   }
+   else if(a=='d'){
+    int num1,num2,num3;
+    printf("enter the value of num1,num2");
+    scanf("%d %d",&num1,&num2);
+    num3=num1/num2;
+    printf("enter the value of num3 is:%d",num3);
+   }
+   else if(a=='s'){
+    int num1,num2,num3;
+    printf("enter the value of num1,num2");
+    scanf("%d %d",&num1,&num2);
+    num3=num1-num2;
+    printf("enter the value of num3 is:%d",num3);
+   }
+   else{
+       printf("input is not matched");
+   }
+   return 0;
+}
+
+-------------------------------------------------------------------
+
+Q) write a c program input character:
+      s: 
+           two number swap without third varible
+
+#include<stdio.h>
+int main(){
+  int a=10;
+  int b=20;
+  printf("enter the value of a:%d\n",a);
+  printf("enter the value of b:%d\n",b);
+  a=b+a;
+  b=a-b;
+  a=a-b;
+   printf(" the swap value of a:%d\n",a);
+   printf(" the swap value of b:%d\n",b);
+   return 0;
+}
+
+----------------------------------------------------------------
+
+Q) write a c program input character:
+      s: 
+           two number swap with third variable
+
+
+#include<stdio.h>
+int main(){
+  int a=100;
+  int b=200;
+  int c;
+  printf("enter the value of a:%d\n",a);
+  printf("enter the value of b:%d\n",b);
+  c=a;
+  a=b;
+  b=c;
+  printf(" the swap value of a:%d\n",a);
+   printf(" the swap value of b:%d\n",b);
+   return 0;
+}
+
+------------------------------------------------------------------
+
+Q) write a c program input character:
+        q,w,e,r,t,y,u,i,o,p :upper line
+
+        a,s,d,f,g,h,j,k,l :mid line
+
+        z,x,c,v,b,n,m :lower line
+
+#include<stdio.h>
+int main(){
+    char a;
+    printf("enter any single character");
+    scanf("%c",&a);
+    if(a=='q'||a=='w'||a=='e'||a=='r'||a=='t'||a=='y'||a=='u'||a=='i'||a=='o'||a=='p'){
+        printf("upper line");
+    }
+    else if(a=='a'||a=='s'||a=='d'||a=='f'||a=='g'||a=='h'||a=='j'||a=='k'||a=='l'){
+        printf("mid line");
+    }
+    else if(a=='z'||a=='x'||a=='c'||a=='v'||a=='b'||a=='n'||a=='m'){
+        printf("lower line");
+    }
+    return 0;
+}
+
+--------------------------------------------------------------------------
+
+Q) Q) C program to convert temperature from Faherenheit to Celsius and Celsius to fahernheit 
+       Celsius
+       F----c
+       Faherenheit
+       c-----f
+
+
+ #include<stdio.h>
+int main(){
+    char a;
+    printf("Enter the value of a:");
+    scanf("%c",&a);
+    if(a=='c'){
+         float cel,far;
+         printf("Enter the temperature:");
+         scanf("%f",&far);
+         cel=(far-32.0)*(5.0/9.0);
+         printf("%f",cel);
+
+    }
+    else if(a=='f'){
+        float c,f;
+        printf("Enter the temperature:");
+        scanf("%f",&c);
+        f=((9.0/5.0)*c)+32.0;
+        printf("%f",f);
+    }
+    else{
+       printf("Input is not valid"); 
+    }
+    return 0;
+}
+
+---------------------------------------------------------------------------
+
+Q) C program to enter student marks and find percentage and grade
+A college has the following rules for the grading system:
+5 marks (grade + %)
+1. Below 25 – F
+2. 25 to 45 – E
+3. 45 to 50 – D
+4. 50 to 60 – C
+5. 60 to 80 – B 
+6. Above 80 – A
+
+#include<stdio.h>
+int main(){
+    int a,b,c,d,e;
+    printf("Enter the student marks:");
+    scanf("%d%d%d%d%d",&a,&b,&c,&d,&e);
+    int total;
+    total=a+b+c+d+e;
+    float percentage;
+    percentage=(total*100)/500;
+    printf("%f\n",percentage);
+    if(percentage<25){
+        printf("Your grade is: F\n");
+    }
+    else if(percentage>=25 && percentage<45 ){
+        printf("Your grade is: E");
+    }
+    else if(percentage>=45 && percentage<50){
+        printf("Your grade is: D");
+    }
+    else if(percentage>=50 && percentage<60){
+        printf("Your grade is: C");
+    }
+    else if(percentage>=60 && percentage<80){
+        printf("Your grade is: B");
+    }
+    else if(percentage>=80){
+        printf("Your grade is: A");
+        
+    }
+    else{
+        printf("Please enter correct value");
+    }
+
+    return 0;
+}
+
+
+---------------------------------------------------------------------------------------
+
+Q) Write a C program to read the roll no, name,fnname and marks of three subjects and calculate the total, percentage and division.
+Test Data :
+Input the Roll Number of the student :784
+student name : 
+fname:
+mname:
+address:
+contact:
+Input the marks of Physics, Chemistry and Computer Application : 70 80 90
+total: 
+precentage : % 
+division:
+
+#include<stdio.h>
+int main(){
+    int ph,ch,ca,total,roll,contact;
+    float per;
+    char name[20],fname[20],add[50];
+    printf("Enter the marks of physics,chemistry and computer applications:");
+    scanf("%d%d%d",&ph,&ch,&ca);
+    total=ph+ch+ca;
+    per=total/3.0;
+    printf("Enter the roll no. of the student:");
+    scanf("%d",&roll);
+    printf("Enter the name of the student:");
+    scanf(" %s",&name);
+    printf("Enter the father's name of the student:");
+    scanf(" %s",&fname);
+    printf("Enter the address of the student:");
+    scanf(" %s",&add);
+    printf("Enter the phone number of 10 digits:");
+    scanf("%d",&contact);
+    printf("The total marks of a student: %d\n",total);
+    printf("The percentage of the student: %f\n",per);
+    if(per>=80){
+        printf("First division");
+    }
+    else if(per<80 && per>=60){
+        printf("Second division");
+    }
+    else if(per>33 && per<60){
+        printf("Third division");
+    }
+    else{
+        printf("fail");
+    }
+    return 0;
+}
+
+-------------------------------------------------------------------------------------------
+
+Q) salary :
+holidays (1) =full salary 
+2-5 =5% 
+5-14 =10% 
+15 =50% 
+else =not salary 
+output : 
+name:
+address: 
+bank details: 
+salary : 
+alot :
+holidays :
+
+#include<stdio.h>
+int main(){
+    char name,add,bank_name;
+    int salary,holiday;
+    float alot;
+    printf("Enter the name of employee:");
+    scanf("%s",&name);
+    printf("Enter the address of the employee:");
+    scanf(" %s",&add);
+    printf("Enter the bank details:");
+    scanf(" %s",&bank_name);
+    printf("Enter the salary of the employee:");
+    scanf("%d",&salary);
+    printf("The holidays can employee can take:");
+    scanf("%d",&holiday);
+    if(holiday==1){
+        printf("The employee complete salary:%d",salary);
+    }
+    else if(holiday>=2 && holiday<=5){
+        alot=salary-((salary*5)/100);
+        printf("The salary of the employee:%f",alot);
+    }
+    else if(holiday>5 && holiday<15){
+        alot=salary-((salary*10)/100);
+        printf("The salary of the employee:%f",alot);
+    }
+    else if(holiday==15){
+        alot=salary-((salary*15)/100);
+        printf("The salary of the employee:%f",alot);
+    }
+    else{
+        printf("Not salary");
+    }
+    return 0;
+}
+Output:
+
+--------------------------------------------------------------------------------------
+
+Q) electricity bill : 
+4 unit 
+40 
+1- 10 = 10% 
+11-20 =15% 
+21-40 =30% 
+50 =50% 
+output : 
+name:
+unit :3 
+amount 30 
+discount : 10% 
+total pay amount :
+
+#include<stdio.h>
+int main(){
+    int unit;
+    float amount;
+    printf("Enter the units:");
+    scanf("%d",&unit);
+    amount=unit*10;
+    if(unit>=1 && unit<=10){
+        amount=amount-((amount*10)/100);
+        printf("The total pay amount is:%f",amount);
+    }
+    else if(unit>=11 && unit<=20){
+        amount=amount-((amount*15)/100);
+        printf("The total pay amount is:%f",amount);
+    }
+    else if(unit>=21 && unit<=40){
+        amount=amount-((amount*30)/100);
+        printf("The total pay amount is:%f",amount);
+    }
+    else if(unit==50){
+        amount=amount-((amount*50)/100);
+        printf("The total pay amount is:%f",amount);
+    }
+    else{
+        printf("input is not matched");
+    }
+ return 0;
+}
+
+-------------------------------------------------------------------------------------------
+
+Q) Tax Calculator
+Write a C program that calculates income tax for individuals based on the following criteria:
+
+Income <= 10,000: No tax
+10,001 - 30,000: 10% tax
+30,001 - 50,000: 20% tax
+Income > 50,000: 30% tax
+
+#include<stdio.h>
+int main(){
+    int income;
+    float tax;
+    printf("Enter the income of the employee:");
+    scanf("%d",&income);
+    if(income<=10000){
+        printf("No tax, the employee salary is:%d",income);
+    }
+    else if(income>10000 && income<=30000){
+        tax=income-((income*10)/100);
+        printf("The salary of the employee is:%f",tax);
+    }
+    else if(income>30000 && income<=50000){
+        tax=income-((income*20)/100);
+        printf("The salary of the employee is:%f",tax);
+    }
+    else if(income>50000){
+        tax=income-((income*30)/100);
+        printf("The salary of the employee is:%f",tax);
+    }
+    else{
+        printf("input is not matched");
+    }
+    return 0;
+}
+
+------------------------------------------------------------------------------------
+
+Q) Ticket booking system
+   Design a ticket booking system for a cinema that calculates the ticket price based on the age of the customer. Children (age < 12) get a 50% discount, while seniors (age >= 65) get a 30% discount.
+
+
+#include<stdio.h>
+int main(){
+    int ticket,age;
+    float discount;
+    printf("Enter the ticket price:");
+    scanf("%d",&ticket);
+    printf("Enter the age:");
+    scanf("%d",&age);
+    if(age<12){
+        discount=ticket-((ticket*50)/100);
+        printf("The ticket for children is:%f",discount);
+    }
+    else if(age>=65){
+        discount=ticket-((ticket*30)/100);
+        printf("The ticket for senior citizen is:%f",discount);
+    }
+    else{
+        printf("The ticket in original price:%d",ticket);
+    }
+    return 0;
+}
+
+-----------------------------------------------------------------------------------------------
